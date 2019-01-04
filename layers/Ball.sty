@@ -18,14 +18,14 @@
 \coordinate (\name-south)  at ( 0 , -\r, 0) ;
 
 \path (\name-south) + (0,-20pt) coordinate (caption-node) 
-edge ["\textcolor{black}{\bf \caption}"'] (caption-node); %Ball caption
+edge ["\textcolor{black}{\bf \object-caption}"'] (caption-node); %Ball caption
 
 },
 /sphere/.search also={/tikz},
 /sphere/.cd,
 radius/.store       in=\radius,
 scale/.store        in=\scale,
-caption/.store      in=\caption,
+object-caption/.store      in=\object-caption,
 name/.store         in=\name,
 fill/.store         in=\fill,
 logo/.store         in=\logo,
@@ -35,6 +35,6 @@ fill=green,
 opacity=0.10,
 scale=0.2,
 radius=0.5,
-caption=,
+object-caption=,
 name=,
 }
